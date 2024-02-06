@@ -1,14 +1,26 @@
 package user
 
-import "github.com/metruzanca/go-photos/src/ui/layout"
+import (
+  "github.com/metruzanca/go-photos/src/ui/layout"
+  "github.com/metruzanca/go-photos/src/model"
+)
 
-templ List() {
+func GetCurrentUser(ctx context.Context) string {
+  user, ok := ctx.Value("user").(string)
+  if !ok {
+    return ""
+  }
+  return user
+}
+
+templ List(user model.User) {
   @layout.Base() {
+    {GetCurrentUser(ctx)}
     <div>
       <nav>
         Nice nav hahah
       </nav>
-  	  <h1>Hello User</h1>
+  	  <h1>Hello {user.Email}</h1>
     </div>
   }
 }
