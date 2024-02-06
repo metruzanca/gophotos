@@ -1,3 +1,3 @@
 run:
-	@templ generate
-	@go run main.go
+	@templ generate 
+	@go run src/main.go

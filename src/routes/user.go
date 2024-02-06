@@ -2,7 +2,7 @@ package routes
 
 import (
 	"github.com/labstack/echo/v4"
-	"github.com/metruzanca/go-photos/ui/user"
+	"github.com/metruzanca/go-photos/src/ui/user"
 )
 
 type UserRoute struct{}
