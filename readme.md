@@ -7,3 +7,4 @@ Side project for learning golang
 
 ## Resources
 - [Anthony GG's Golang + Templ intro](https://www.youtube.com/watch?v=wttTTFVrQiw)
+- [Free Gophers](https://github.com/egonelbre/gophers)

@@ -3,6 +3,8 @@ package user
 import (
   "github.com/metruzanca/go-photos/src/ui/layout"
   "github.com/metruzanca/go-photos/src/model"
+	"github.com/labstack/echo/v4"
+	"net/http"
 )
 
 func GetCurrentUser(ctx context.Context) string {
@@ -13,14 +15,25 @@ func GetCurrentUser(ctx context.Context) string {
   return user
 }
 
+func HandleClicked(c echo.Context) error {
+  return c.String(http.StatusOK, "<div>Lmao</div>")
+}
+
 templ List(user model.User) {
-  @layout.Base() {
+  @layout.Base("Gophoto") {
     {GetCurrentUser(ctx)}
     <div>
-      <nav>
+      <nav class="flex">
         Nice nav hahah
       </nav>
   	  <h1>Hello {user.Email}</h1>
+      
+
+      <div>
+        <button hx-post="/clicked" hx-swap="outerHTML">
+          Click Me
+        </button>
+      </div>
     </div>
   }
 }

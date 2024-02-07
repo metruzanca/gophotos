@@ -1,12 +1,15 @@
 package layout
 
-templ Base() {
+templ Base(name string) {
   <!DOCTYPE html>
   <html lang="en">
   <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Document</title>
+    <script src="https://unpkg.com/htmx.org@1.9.10"></script>
+    <link rel="stylesheet" href="/static/styles.css"/>
+    <link rel="icon" href="/static/favicon.png"/>
+    <title>{name}</title>
   </head>
   <body>
     { children... }
