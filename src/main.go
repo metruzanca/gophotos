@@ -16,7 +16,7 @@ func main() {
 	// e.File("/favicon.png", "/static/favicon.png")
 	// e.File("/styles.css", "/static/styles.css")
 
-	e.Static("/static", "static")
+	e.Static("/", "public")
 
 	userRoute := routes.UserRoute{}
 	e.GET("/user", userRoute.UserList)
