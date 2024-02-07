@@ -1,4 +1,4 @@
-# Go~~ogle~~ Photos
+# Go~~ogle~~photos
 
 Side project for learning golang
 

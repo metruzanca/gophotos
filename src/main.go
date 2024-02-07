@@ -4,8 +4,8 @@ import (
 	"fmt"
 
 	"github.com/labstack/echo/v4"
-	"github.com/metruzanca/go-photos/src/routes"
-	"github.com/metruzanca/go-photos/src/ui/user"
+	"github.com/metruzanca/gophotos/src/routes"
+	"github.com/metruzanca/gophotos/src/ui/user"
 )
 
 const PORT = "3000"

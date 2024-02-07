@@ -1,4 +1,4 @@
-module github.com/metruzanca/go-photos
+module github.com/metruzanca/gophotos
 
 go 1.21.6
 

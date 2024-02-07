@@ -2,8 +2,8 @@ package routes
 
 import (
 	"github.com/labstack/echo/v4"
-	"github.com/metruzanca/go-photos/src/model"
-	"github.com/metruzanca/go-photos/src/ui/user"
+	"github.com/metruzanca/gophotos/src/model"
+	"github.com/metruzanca/gophotos/src/ui/user"
 )
 
 type UserRoute struct{}
